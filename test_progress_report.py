@@ -1,33 +1,26 @@
-
-import pytest
 import random
 
+import pytest
+
+
 class Test_Progress_Report(object):
+    def test_progress_report_01(self):
+        assert True
 
+    @pytest.mark.xfail(reason="passed Simply")
+    def test_progress_report_02(self):
+        assert True
 
-  def test_progress_report_01(self):
-    assert True
+    @pytest.mark.skip(reason="Skip for No Reason")
+    def test_progress_report_03(self):
+        assert True
 
+    @pytest.mark.xfail(reason="Failed Simply")
+    def test_progress_report_04(self):
+        assert False
 
-  @pytest.mark.xfail(reason="passed Simply")
-  def test_progress_report_02(self):
-    assert True
+    def test_progress_report_05(self):
+        assert False
 
-
-  @pytest.mark.skip(reason="Skip for No Reason")
-  def test_progress_report_03(self):
-    assert True
-
-
-  @pytest.mark.xfail(reason="Failed Simply")
-  def test_progress_report_04(self):
-    assert False
-
-
-  def test_progress_report_05(self):
-    assert False
-
-
-  def test_progress_report_06(self):
-    assert random.choice([True, False])
-
+    def test_progress_report_06(self):
+        assert random.choice([True, False])

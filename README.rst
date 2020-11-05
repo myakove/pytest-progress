@@ -2,8 +2,8 @@ pytest-progress
 ================
 
 
-pytest-progress is a plugin for `py.test <http://pytest.org>`_ that allows to 
-print the test progress like number of tests Passed , Failed, Skipped and also 
+pytest-progress is a plugin for `py.test <http://pytest.org>`_ that allows to
+print the test progress like number of tests Passed , Failed, Skipped and also
 instant test failure messages.
 
 
@@ -31,4 +31,3 @@ Then run your tests with::
 If you would like more detailed output (one test per line), then you may use the verbose option::
 
     $ py.test --verbose
-
